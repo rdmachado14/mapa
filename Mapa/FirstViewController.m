@@ -8,20 +8,32 @@
 
 #import "FirstViewController.h"
 
+
 @interface FirstViewController ()
+
 
 @end
 
-@implementation FirstViewController
+@implementation FirstViewController 
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self.lm requestAlwaysAuthorization];
+    [self.lm requestWhenInUseAuthorization];
+    
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+{
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 200, 200);
+    [self.map setRegion:[self.map regionThatFits:region] animated:YES];
 }
 
 @end

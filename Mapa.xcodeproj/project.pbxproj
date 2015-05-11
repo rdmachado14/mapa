@@ -15,6 +15,10 @@
 		793FCF171B00D35E00FD8D1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 793FCF161B00D35E00FD8D1C /* Images.xcassets */; };
 		793FCF1A1B00D35E00FD8D1C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793FCF181B00D35E00FD8D1C /* LaunchScreen.xib */; };
 		793FCF261B00D35E00FD8D1C /* MapaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 793FCF251B00D35E00FD8D1C /* MapaTests.m */; };
+		793FCF301B00D49400FD8D1C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 793FCF2F1B00D49400FD8D1C /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		793FCF321B00D8AD00FD8D1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 793FCF311B00D8AD00FD8D1C /* UIKit.framework */; };
+		793FCF341B00D8D700FD8D1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 793FCF331B00D8D700FD8D1C /* Foundation.framework */; };
+		793FCF361B00D8EA00FD8D1C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 793FCF351B00D8EA00FD8D1C /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,10 @@
 		793FCF1F1B00D35E00FD8D1C /* MapaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		793FCF241B00D35E00FD8D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		793FCF251B00D35E00FD8D1C /* MapaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapaTests.m; sourceTree = "<group>"; };
+		793FCF2F1B00D49400FD8D1C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		793FCF311B00D8AD00FD8D1C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		793FCF331B00D8D700FD8D1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		793FCF351B00D8EA00FD8D1C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +58,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				793FCF361B00D8EA00FD8D1C /* CoreGraphics.framework in Frameworks */,
+				793FCF341B00D8D700FD8D1C /* Foundation.framework in Frameworks */,
+				793FCF321B00D8AD00FD8D1C /* UIKit.framework in Frameworks */,
+				793FCF301B00D49400FD8D1C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +78,10 @@
 		793FCEFA1B00D35E00FD8D1C = {
 			isa = PBXGroup;
 			children = (
+				793FCF351B00D8EA00FD8D1C /* CoreGraphics.framework */,
+				793FCF331B00D8D700FD8D1C /* Foundation.framework */,
+				793FCF311B00D8AD00FD8D1C /* UIKit.framework */,
+				793FCF2F1B00D49400FD8D1C /* MapKit.framework */,
 				793FCF051B00D35E00FD8D1C /* Mapa */,
 				793FCF221B00D35E00FD8D1C /* MapaTests */,
 				793FCF041B00D35E00FD8D1C /* Products */,
@@ -173,6 +189,11 @@
 				TargetAttributes = {
 					793FCF021B00D35E00FD8D1C = {
 						CreatedOnToolsVersion = 6.3.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					793FCF1E1B00D35E00FD8D1C = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -354,6 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Mapa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -364,6 +386,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Mapa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

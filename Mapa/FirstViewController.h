@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@import MapKit;
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController <UIApplicationDelegate, MKMapViewDelegate>
+
+@property (weak, nonatomic) IBOutlet MKMapView *map;
+@property (strong, nonatomic) CLLocationManager *lm;
 
 
 @end
