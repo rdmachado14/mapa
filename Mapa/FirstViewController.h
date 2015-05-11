@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MapPin.h"
 @import MapKit;
+@import CoreLocation;
 
 @interface FirstViewController : UIViewController <UIApplicationDelegate, MKMapViewDelegate>
 
