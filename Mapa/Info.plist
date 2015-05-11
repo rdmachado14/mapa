@@ -16,7 +16,7 @@
 		</dict>
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string>teste123</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string></string>
 	<key>CFBundleExecutable</key>
