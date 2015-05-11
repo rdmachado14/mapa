@@ -155,37 +155,4 @@
     }
 }
 
-/*- (instancetype)initWithLatitude:(CLLocationDegrees)latitude andLongitude:(CLLocationDegrees)longitude
-{
-    latitude = -3.113001;
-    longitude = -59.982060;
-    
-    return self;
-}*/
-
-/*- (void)applicationDidFinishLaunching:(UIApplication *)application {
-    // Override point for customization after app launch
-    [window addSubview:viewController.view];
-    [window makeKeyAndVisible];
-    
-    CLLocationCoordinate2D coord;
-    coord.longitude = -111.936619;
-    coord.latitude = 33.416199;
-    
-    MKReverseGeocoder *geocoder = [[MKReverseGeocoder alloc] initWithCoordinate:coord];
-    [geocoder setDelegate:self];
-    [geocoder start]
-}*/
-
-/*-(NSString *)getAddressFromLatLon:(double)pdblLatitude withLongitude:(double)pdblLongitude
-{
-      NSString *urlString = [NSString stringWithFormat:@"http://maps.google.com/maps/geo?q=%f,%f&output=csv",pdblLatitude, pdblLongitude];
-      NSError* error;
-      NSString *locationString = [NSString stringWithContentsOfURL:[NSURL URLWithString:urlString] encoding:NSASCIIStringEncoding error:&error];
-       // NSLog(@"%@",locationString);
-    
-      locationString = [locationString stringByReplacingOccurrencesOfString:@"\"" withString:@""];
-      return [locationString substringFromIndex:6];
-}*/
-
 @end
