@@ -17,17 +17,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hmo-Ar-2fR">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="107" width="375" height="511"/>
                                 <connections>
                                     <outlet property="delegate" destination="9pv-A4-QxB" id="D72-xa-PVy"/>
                                 </connections>
                             </mapView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YH4-fh-uZA">
+                                <rect key="frame" x="13" y="28" width="349" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBJ-wQ-y1T">
+                                <rect key="frame" x="16" y="580" width="38" height="30"/>
+                                <state key="normal" title="Local">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="local:" destination="9pv-A4-QxB" eventType="touchUpInside" id="fYz-T9-9Zi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Hmo-Ar-2fR" secondAttribute="trailing" id="1rU-KV-GlA"/>
                             <constraint firstItem="Hmo-Ar-2fR" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="3J8-be-jtH"/>
-                            <constraint firstItem="Hmo-Ar-2fR" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="YpR-3h-snG"/>
+                            <constraint firstItem="Hmo-Ar-2fR" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="107" id="YpR-3h-snG"/>
                             <constraint firstItem="Hmo-Ar-2fR" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="cAS-Tq-cPC"/>
                         </constraints>
                     </view>
@@ -35,6 +48,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="map" destination="Hmo-Ar-2fR" id="ycl-8z-1V2"/>
+                        <outlet property="mysearch" destination="YH4-fh-uZA" id="yPP-pb-yrJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
