@@ -19,8 +19,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.lm = [[CLLocationManager alloc] init];
     [self.lm requestAlwaysAuthorization];
-    [self.lm requestWhenInUseAuthorization];
     
 }
 
