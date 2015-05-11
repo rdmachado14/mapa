@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--First-->
@@ -16,17 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hmo-Ar-2fR">
-                                <rect key="frame" x="0.0" y="107" width="375" height="511"/>
-                                <connections>
-                                    <outlet property="delegate" destination="9pv-A4-QxB" id="D72-xa-PVy"/>
-                                </connections>
-                            </mapView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YH4-fh-uZA">
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="YH4-fh-uZA">
                                 <rect key="frame" x="13" y="28" width="349" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBJ-wQ-y1T">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBJ-wQ-y1T">
                                 <rect key="frame" x="16" y="580" width="38" height="30"/>
                                 <state key="normal" title="Local">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -35,13 +30,24 @@
                                     <action selector="local:" destination="9pv-A4-QxB" eventType="touchUpInside" id="fYz-T9-9Zi"/>
                                 </connections>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hmo-Ar-2fR">
+                                <rect key="frame" x="0.0" y="72" width="375" height="546"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="D72-xa-PVy"/>
+                                </connections>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="YH4-fh-uZA" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="1Xv-JT-euZ"/>
                             <constraint firstAttribute="trailing" secondItem="Hmo-Ar-2fR" secondAttribute="trailing" id="1rU-KV-GlA"/>
                             <constraint firstItem="Hmo-Ar-2fR" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="3J8-be-jtH"/>
-                            <constraint firstItem="Hmo-Ar-2fR" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="107" id="YpR-3h-snG"/>
+                            <constraint firstItem="bBJ-wQ-y1T" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="EwH-4H-brV"/>
+                            <constraint firstItem="YH4-fh-uZA" firstAttribute="centerX" secondItem="Hmo-Ar-2fR" secondAttribute="centerX" id="OIM-ZU-hU9"/>
+                            <constraint firstItem="Hmo-Ar-2fR" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="72" id="YpR-3h-snG"/>
                             <constraint firstItem="Hmo-Ar-2fR" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="cAS-Tq-cPC"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="bBJ-wQ-y1T" secondAttribute="bottom" constant="8" symbolic="YES" id="d4L-10-cfV"/>
+                            <constraint firstItem="YH4-fh-uZA" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-3" id="qk2-ah-DG0"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
