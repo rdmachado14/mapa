@@ -10,6 +10,6 @@
 
 @implementation MapPin
 
-@synthesize coordinate, title, subtitle;
+@synthesize coordinate, title, subtitle, nomeFilme;
 
 @end

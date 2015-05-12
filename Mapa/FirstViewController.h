@@ -11,12 +11,15 @@
 @import MapKit;
 @import CoreLocation;
 
-@interface FirstViewController : UIViewController <UIApplicationDelegate, MKMapViewDelegate>
+@interface FirstViewController : UIViewController <UIApplicationDelegate, MKMapViewDelegate, UISearchBarDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *map;
 @property (strong, nonatomic) CLLocationManager *lm;
 @property (weak, nonatomic) IBOutlet UISearchBar *mysearch;
 @property (nonatomic) NSInteger local;
+
+- (IBAction)coordenadas:(id)sender;
+
 
 @end
 

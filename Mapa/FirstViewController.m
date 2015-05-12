@@ -11,11 +11,9 @@
 
 @interface FirstViewController ()
 
-
-
 @end
 
-@implementation FirstViewController 
+@implementation FirstViewController
 
 - (void)viewDidLoad
 {
@@ -34,7 +32,7 @@
     region.span.latitudeDelta = 0.0f;
     [_map setRegion:region animated:YES];
     MapPin *ann1 = [[MapPin alloc]init];
-    ann1.title = @"Manaura Shopping";
+    ann1.title = @"Manauara Shopping";
     ann1.subtitle = @"PlayArt";
     ann1.coordinate = region.center;
     [_map addAnnotation:ann1];
@@ -71,7 +69,7 @@
     region.span.latitudeDelta = 0.0f;
     [_map setRegion:region animated:YES];
     MapPin *ann4 = [[MapPin alloc]init];
-    ann4.title = @"Millennium Shpping";
+    ann4.title = @"Millennium Shopping";
     ann4.subtitle = @"Cinépolis";
     ann4.coordinate = region.center;
     [_map addAnnotation:ann4];
@@ -99,6 +97,9 @@
     ann6.subtitle = @"Cinemais";
     ann6.coordinate = region.center;
     [_map addAnnotation:ann6];
+    
+
+
 
 }
 
@@ -134,7 +135,8 @@
     
 }
 
-- (IBAction)local:(id)sender {
+- (IBAction)local:(id)sender
+{
     _local = 1;
 }
 
@@ -155,4 +157,31 @@
     }
 }
 
+- (IBAction)coordenadas:(id)sender
+{
+    // caminho para o Studio 5
+    NSString *string1 = @"http://maps.apple.com/maps?daddr=-3.120470,-59.981877";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string1]];
+    
+    // caminho para o Manauara
+    NSString *string2 = @"http://maps.apple.com/maps?daddr=-3.104249,-60.013606";
+     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string2]];
+     
+     // caminho para o amazonas shopping
+     NSString *string3 = @"http://maps.apple.com/maps?daddr=-3.094275,-60.022632";
+     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string3]];
+     
+     // caminho para o millennium
+     NSString *string4 = @"http://maps.apple.com/maps?daddr=-3.101028,-60.025077";
+     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string4]];
+     
+     // caminho para o ponta negra
+     NSString *string5 = @"http://maps.apple.com/maps?daddr=-3.085060,-60.072378";
+     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string5]];
+     
+     // caminho para o plaza
+     NSString *string6 = @"http://maps.apple.com/maps?daddr=-3.097410,-60.023012";
+     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string6]];
+
+}
 @end
