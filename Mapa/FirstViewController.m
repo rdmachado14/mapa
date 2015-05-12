@@ -116,7 +116,11 @@
     
     return myPin;
     
-    
+}
+
+- (void) button: (id) sender
+{
+    NSLog(@"Feito");
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
