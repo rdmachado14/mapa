@@ -97,10 +97,26 @@
     ann6.subtitle = @"Cinemais";
     ann6.coordinate = region.center;
     [_map addAnnotation:ann6];
+
+}
+
+- (MKAnnotationView *) mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+{
+    MKPinAnnotationView *myPin = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"current"];
+    myPin.pinColor = MKPinAnnotationColorGreen;
     
-
-
-
+    UIButton *advertButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    [advertButton addTarget:self action:@selector(button:) forControlEvents:UIControlEventTouchUpInside];
+    
+    myPin.rightCalloutAccessoryView = advertButton;
+    myPin.draggable = NO;
+    myPin.highlighted = YES;
+    myPin.animatesDrop = TRUE;
+    myPin.canShowCallout = YES;
+    
+    return myPin;
+    
+    
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
