@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "SecondViewController.h"
 
 
 @interface FirstViewController ()
@@ -120,7 +121,12 @@
 
 - (void) button: (id) sender
 {
-    NSLog(@"Feito");
+    /*self.tabBarController.selectedIndex = 1;
+    SecondViewController *uvc = [self.tabBarController.viewControllers objectAtIndex:1];*/
+    
+    //NSLog(@"Feito");
+    
+    
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
