@@ -10,7 +10,6 @@
 		793FCF091B00D35E00FD8D1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 793FCF081B00D35E00FD8D1C /* main.m */; };
 		793FCF0C1B00D35E00FD8D1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 793FCF0B1B00D35E00FD8D1C /* AppDelegate.m */; };
 		793FCF0F1B00D35E00FD8D1C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793FCF0E1B00D35E00FD8D1C /* FirstViewController.m */; };
-		793FCF121B00D35E00FD8D1C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793FCF111B00D35E00FD8D1C /* SecondViewController.m */; };
 		793FCF151B00D35E00FD8D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793FCF131B00D35E00FD8D1C /* Main.storyboard */; };
 		793FCF171B00D35E00FD8D1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 793FCF161B00D35E00FD8D1C /* Images.xcassets */; };
 		793FCF1A1B00D35E00FD8D1C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793FCF181B00D35E00FD8D1C /* LaunchScreen.xib */; };
@@ -22,6 +21,7 @@
 		7967BE511B0292820047DB98 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7967BE4F1B0292820047DB98 /* Model.xcdatamodeld */; };
 		7967BE571B0298DD0047DB98 /* FilmeStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7967BE561B0298DD0047DB98 /* FilmeStore.m */; };
 		7967BE5A1B02990F0047DB98 /* Filme.m in Sources */ = {isa = PBXBuildFile; fileRef = 7967BE591B02990F0047DB98 /* Filme.m */; };
+		7993EABB1B0378E8004D61BE /* SegundaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7993EABA1B0378E8004D61BE /* SegundaViewController.m */; };
 		799A06211B01432F0084FA5A /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 799A06201B01432F0084FA5A /* MapPin.m */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +43,6 @@
 		793FCF0B1B00D35E00FD8D1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		793FCF0D1B00D35E00FD8D1C /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		793FCF0E1B00D35E00FD8D1C /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		793FCF101B00D35E00FD8D1C /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		793FCF111B00D35E00FD8D1C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		793FCF141B00D35E00FD8D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		793FCF161B00D35E00FD8D1C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		793FCF191B00D35E00FD8D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -60,6 +58,8 @@
 		7967BE561B0298DD0047DB98 /* FilmeStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmeStore.m; sourceTree = "<group>"; };
 		7967BE581B02990F0047DB98 /* Filme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filme.h; sourceTree = "<group>"; };
 		7967BE591B02990F0047DB98 /* Filme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filme.m; sourceTree = "<group>"; };
+		7993EAB91B0378E8004D61BE /* SegundaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegundaViewController.h; sourceTree = "<group>"; };
+		7993EABA1B0378E8004D61BE /* SegundaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegundaViewController.m; sourceTree = "<group>"; };
 		799A061F1B01432F0084FA5A /* MapPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
 		799A06201B01432F0084FA5A /* MapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,8 +115,8 @@
 				793FCF0B1B00D35E00FD8D1C /* AppDelegate.m */,
 				793FCF0D1B00D35E00FD8D1C /* FirstViewController.h */,
 				793FCF0E1B00D35E00FD8D1C /* FirstViewController.m */,
-				793FCF101B00D35E00FD8D1C /* SecondViewController.h */,
-				793FCF111B00D35E00FD8D1C /* SecondViewController.m */,
+				7993EAB91B0378E8004D61BE /* SegundaViewController.h */,
+				7993EABA1B0378E8004D61BE /* SegundaViewController.m */,
 				7967BE551B0298DD0047DB98 /* FilmeStore.h */,
 				7967BE561B0298DD0047DB98 /* FilmeStore.m */,
 				7967BE581B02990F0047DB98 /* Filme.h */,
@@ -263,7 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				793FCF121B00D35E00FD8D1C /* SecondViewController.m in Sources */,
+				7993EABB1B0378E8004D61BE /* SegundaViewController.m in Sources */,
 				799A06211B01432F0084FA5A /* MapPin.m in Sources */,
 				7967BE571B0298DD0047DB98 /* FilmeStore.m in Sources */,
 				793FCF0C1B00D35E00FD8D1C /* AppDelegate.m in Sources */,

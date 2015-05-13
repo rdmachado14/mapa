@@ -11,7 +11,7 @@
 @import MapKit;
 @import CoreLocation;
 
-@interface FirstViewController : UIViewController <UIApplicationDelegate, MKMapViewDelegate, UISearchBarDelegate>
+@interface FirstViewController : UIViewController <UIApplicationDelegate, MKMapViewDelegate, UISearchBarDelegate, UITabBarControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *map;
 @property (strong, nonatomic) CLLocationManager *lm;

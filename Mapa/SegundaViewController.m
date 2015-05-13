@@ -1,18 +1,18 @@
 //
-//  SecondViewController.m
+//  SegundaViewController.m
 //  Mapa
 //
-//  Created by Rodrigo DAngelo Silva Machado on 5/11/15.
+//  Created by Rodrigo DAngelo Silva Machado on 5/13/15.
 //  Copyright (c) 2015 Rodrigo DAngelo Silva Machado. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "SegundaViewController.h"
 
-@interface SecondViewController ()
+@interface SegundaViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation SegundaViewController
 
 - (void)viewDidLoad
 {
@@ -43,7 +43,7 @@
         }];
     }];
     
-
+    
 }
 
 - (IBAction)filme2:(id)sender
@@ -59,7 +59,7 @@
             self.label2.hidden = YES;
         }];
     }];
-
+    
 }
 
 - (IBAction)filme3:(id)sender
@@ -75,7 +75,6 @@
             self.label3.hidden = YES;
         }];
     }];
-
+    
 }
-
 @end

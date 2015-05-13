@@ -7,7 +7,7 @@
 //
 
 #import "FirstViewController.h"
-#import "SecondViewController.h"
+#import "SegundaViewController.h"
 
 
 @interface FirstViewController ()
@@ -121,10 +121,13 @@
 
 - (void) button: (id) sender
 {
-    self.tabBarController.selectedIndex = 1;
-    SecondViewController *uvc = [self.tabBarController.viewControllers objectAtIndex:1];
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    SegundaViewController *s = [sb instantiateViewControllerWithIdentifier:@"sb1"];
+    [self presentViewController:s animated:YES completion:nil];
     
 }
+
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
