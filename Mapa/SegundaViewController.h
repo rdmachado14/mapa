@@ -17,5 +17,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *label2;
 @property (weak, nonatomic) IBOutlet UILabel *label3;
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+- (IBAction)cacel:(id)sender;
 
 @end
