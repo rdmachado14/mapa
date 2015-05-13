@@ -54,24 +54,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="YH4-fh-uZA" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="313-9c-a4a"/>
                             <constraint firstItem="YH4-fh-uZA" firstAttribute="centerX" secondItem="Hmo-Ar-2fR" secondAttribute="centerX" id="31g-ko-k9t"/>
                             <constraint firstItem="Hmo-Ar-2fR" firstAttribute="centerX" secondItem="bBJ-wQ-y1T" secondAttribute="centerX" id="7PT-q3-LL8"/>
                             <constraint firstItem="Hmo-Ar-2fR" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="IBr-dt-0ac"/>
                             <constraint firstItem="YH4-fh-uZA" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-3" id="IIH-cD-MXy"/>
                             <constraint firstItem="Hmo-Ar-2fR" firstAttribute="top" secondItem="YH4-fh-uZA" secondAttribute="bottom" constant="26" id="JGq-Mc-zgd"/>
-                            <constraint firstItem="bBJ-wQ-y1T" firstAttribute="top" secondItem="Hmo-Ar-2fR" secondAttribute="bottom" constant="3" id="JcQ-h6-NWd"/>
-                            <constraint firstItem="Hmo-Ar-2fR" firstAttribute="top" secondItem="YH4-fh-uZA" secondAttribute="bottom" constant="26" id="LAq-S4-iRc"/>
+                            <constraint firstItem="Hmo-Ar-2fR" firstAttribute="centerX" secondItem="YH4-fh-uZA" secondAttribute="centerX" id="M8r-wU-Dng"/>
+                            <constraint firstItem="YH4-fh-uZA" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="Mj6-6b-Wxj"/>
                             <constraint firstItem="bBJ-wQ-y1T" firstAttribute="top" secondItem="Hmo-Ar-2fR" secondAttribute="bottom" constant="3" id="Nuy-As-7ae"/>
-                            <constraint firstAttribute="trailing" secondItem="Hmo-Ar-2fR" secondAttribute="trailing" id="cOz-kZ-5LR"/>
+                            <constraint firstItem="bBJ-wQ-y1T" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="50" id="S3M-7p-tAK"/>
+                            <constraint firstItem="Hmo-Ar-2fR" firstAttribute="top" secondItem="YH4-fh-uZA" secondAttribute="bottom" constant="26" id="Vhx-jp-SXb"/>
+                            <constraint firstItem="bBJ-wQ-y1T" firstAttribute="top" secondItem="Hmo-Ar-2fR" secondAttribute="bottom" constant="3" id="WcL-jM-m8S"/>
+                            <constraint firstAttribute="trailing" secondItem="Hmo-Ar-2fR" secondAttribute="trailing" id="ZR6-Ak-zI1"/>
+                            <constraint firstItem="Hmo-Ar-2fR" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="bJT-iS-6FW"/>
                             <constraint firstItem="bBJ-wQ-y1T" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="gf8-d9-GzC"/>
                             <constraint firstAttribute="trailing" secondItem="Hmo-Ar-2fR" secondAttribute="trailing" id="jFB-tZ-RmN"/>
                             <constraint firstItem="YH4-fh-uZA" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="n1E-pS-mPo"/>
-                            <constraint firstItem="bBJ-wQ-y1T" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="vD6-aq-uLN"/>
-                            <constraint firstItem="YH4-fh-uZA" firstAttribute="centerX" secondItem="Hmo-Ar-2fR" secondAttribute="centerX" id="vPw-cb-wRP"/>
-                            <constraint firstItem="Hmo-Ar-2fR" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="wTm-9e-jwh"/>
-                            <constraint firstItem="YH4-fh-uZA" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-3" id="wbL-1S-hrz"/>
-                            <constraint firstItem="bBJ-wQ-y1T" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="50" id="wzX-Om-KGd"/>
+                            <constraint firstItem="bBJ-wQ-y1T" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="rc3-0p-2pf"/>
+                            <constraint firstItem="YH4-fh-uZA" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-3" id="wQI-eI-TIg"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -117,12 +117,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-952.5" y="841.5"/>
+            <point key="canvasLocation" x="-727.5" y="841.5"/>
         </scene>
         <!--Item-->
         <scene sceneID="FhQ-Tg-WnE">
             <objects>
-                <viewController id="Iqi-1U-vk5" sceneMemberID="viewController">
+                <viewController id="Iqi-1U-vk5" customClass="SecondViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="51L-tF-zfL"/>
                         <viewControllerLayoutGuide type="bottom" id="Jjw-Lc-BIe"/>
@@ -131,102 +131,88 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome do cinema" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TK9-xR-fHO">
-                                <rect key="frame" x="121" y="42" width="132" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filmes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TK9-xR-fHO">
+                                <rect key="frame" x="164" y="41" width="50" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qX-id-pFu">
-                                <rect key="frame" x="164" y="104" width="50" height="30"/>
-                                <state key="normal" title="Filme 1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qX-id-pFu">
+                                <rect key="frame" x="101" y="101" width="176" height="30"/>
+                                <state key="normal" title="Vingadores: Era de Ultron">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="filme1:" destination="Iqi-1U-vk5" eventType="touchUpInside" id="5Yr-Qx-dbC"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfX-Yc-Ngy">
-                                <rect key="frame" x="164" y="190" width="50" height="30"/>
-                                <state key="normal" title="Filme 3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfX-Yc-Ngy">
+                                <rect key="frame" x="128" y="177" width="123" height="30"/>
+                                <state key="normal" title="O Franco Atirador">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="filme3:" destination="Iqi-1U-vk5" eventType="touchUpInside" id="77w-nw-4cH"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEL-r0-u6Z">
-                                <rect key="frame" x="164" y="147" width="50" height="30"/>
-                                <state key="normal" title="Filme 2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEL-r0-u6Z">
+                                <rect key="frame" x="119" y="139" width="141" height="30"/>
+                                <state key="normal" title="Velozes e Furiosos 7">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="filme2:" destination="Iqi-1U-vk5" eventType="touchUpInside" id="9RW-Dx-iut"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ação, Marvel, Joss Whedon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNa-56-5fJ">
+                                <rect key="frame" x="82" y="282" width="215" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ação, Universal Pictures, James Wan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fS-ak-flD">
+                                <rect key="frame" x="51" y="340" width="286" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ação, Paris Filmes, Pierre Morel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y56-J2-qkq">
+                                <rect key="frame" x="66" y="396" width="349" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6qX-id-pFu" firstAttribute="centerX" secondItem="nEL-r0-u6Z" secondAttribute="centerX" id="1tl-Zv-lhu"/>
+                            <constraint firstItem="TK9-xR-fHO" firstAttribute="centerX" secondItem="6qX-id-pFu" secondAttribute="centerX" id="4SX-ZR-Dd2"/>
+                            <constraint firstItem="tNa-56-5fJ" firstAttribute="centerX" secondItem="lfX-Yc-Ngy" secondAttribute="centerX" id="4gd-XV-XcH"/>
+                            <constraint firstItem="7fS-ak-flD" firstAttribute="top" secondItem="tNa-56-5fJ" secondAttribute="bottom" constant="37" id="HYp-MC-Xbr"/>
+                            <constraint firstItem="tNa-56-5fJ" firstAttribute="top" secondItem="lfX-Yc-Ngy" secondAttribute="bottom" constant="75" id="LXb-pm-0B0"/>
+                            <constraint firstItem="7fS-ak-flD" firstAttribute="centerX" secondItem="y56-J2-qkq" secondAttribute="centerX" constant="-46.5" id="SMX-oH-zEU"/>
+                            <constraint firstItem="nEL-r0-u6Z" firstAttribute="centerX" secondItem="lfX-Yc-Ngy" secondAttribute="centerX" id="X6x-GX-br4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="y56-J2-qkq" secondAttribute="trailing" constant="-56" id="Z4Q-uQ-1sv"/>
+                            <constraint firstItem="TK9-xR-fHO" firstAttribute="top" secondItem="51L-tF-zfL" secondAttribute="bottom" constant="21" id="cZZ-M9-3CZ"/>
+                            <constraint firstItem="nEL-r0-u6Z" firstAttribute="top" secondItem="6qX-id-pFu" secondAttribute="bottom" constant="8" symbolic="YES" id="cfR-hQ-1XW"/>
+                            <constraint firstItem="y56-J2-qkq" firstAttribute="leading" secondItem="KQL-aD-WHV" secondAttribute="leadingMargin" constant="50" id="hqg-vm-W2a"/>
+                            <constraint firstItem="6qX-id-pFu" firstAttribute="top" secondItem="TK9-xR-fHO" secondAttribute="bottom" constant="39" id="lkl-Ta-SCv"/>
+                            <constraint firstItem="tNa-56-5fJ" firstAttribute="leading" secondItem="KQL-aD-WHV" secondAttribute="leadingMargin" constant="66" id="mkm-0W-B0q"/>
+                            <constraint firstItem="y56-J2-qkq" firstAttribute="top" secondItem="7fS-ak-flD" secondAttribute="bottom" constant="35" id="pAC-Js-8qb"/>
+                            <constraint firstItem="lfX-Yc-Ngy" firstAttribute="top" secondItem="nEL-r0-u6Z" secondAttribute="bottom" constant="8" symbolic="YES" id="qnh-H6-VcX"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="kSO-d0-hdh"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="label1" destination="tNa-56-5fJ" id="FA5-JR-FbJ"/>
+                        <outlet property="label2" destination="7fS-ak-flD" id="MdQ-8h-YR7"/>
+                        <outlet property="label3" destination="y56-J2-qkq" id="sdj-5Z-Bxm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ghe-mp-Cf0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-166.5" y="841.5"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="Hdg-5V-ZMk">
-            <objects>
-                <viewController id="eOb-wx-rFc" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Afc-GQ-m0I"/>
-                        <viewControllerLayoutGuide type="bottom" id="iHo-MM-9VU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3J4-6s-kHz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome do filme" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdt-0p-IXl">
-                                <rect key="frame" x="131" y="28" width="112" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Horário" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1P-PJ-h08">
-                                <rect key="frame" x="45" y="247" width="57" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preço" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebY-WX-hqO">
-                                <rect key="frame" x="45" y="353" width="45" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Amv-Xb-X40">
-                                <rect key="frame" x="135" y="69" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nt8-FN-0QC">
-                                <rect key="frame" x="135" y="243" width="224" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="efD-x7-0dU">
-                                <rect key="frame" x="131" y="349" width="112" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descrição" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98s-0P-c7R">
-                                <rect key="frame" x="45" y="122" width="77" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="mre-Jd-nkp"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bZ7-CE-ojb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="493.5" y="841.5"/>
+            <point key="canvasLocation" x="325.5" y="841.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -242,7 +228,6 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="Iqi-1U-vk5" kind="relationship" relationship="viewControllers" id="bQw-V3-jNG"/>
-                        <segue destination="eOb-wx-rFc" kind="relationship" relationship="viewControllers" id="3w0-OR-kC4"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>

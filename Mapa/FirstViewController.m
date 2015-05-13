@@ -121,10 +121,10 @@
 
 - (void) button: (id) sender
 {
-    /*self.tabBarController.selectedIndex = 1;
-    SecondViewController *uvc = [self.tabBarController.viewControllers objectAtIndex:1];*/
+    self.tabBarController.selectedIndex = 1;
+    SecondViewController *uvc = [self.tabBarController.viewControllers objectAtIndex:1];
     
-    //NSLog(@"Feito");
+    
     
     
 }
