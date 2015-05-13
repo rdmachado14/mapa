@@ -17,6 +17,7 @@
 @property (strong, nonatomic) CLLocationManager *lm;
 @property (weak, nonatomic) IBOutlet UISearchBar *mysearch;
 @property (nonatomic) NSInteger local;
+@property (nonatomic, readonly) CLLocationCoordinate2D cl;
 
 - (IBAction)coordenadas:(id)sender;
 

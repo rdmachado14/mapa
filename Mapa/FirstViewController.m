@@ -98,6 +98,7 @@
     ann6.subtitle = @"Cinemais";
     ann6.coordinate = region.center;
     [_map addAnnotation:ann6];
+    //self.
 
 }
 
@@ -108,6 +109,8 @@
     
     UIButton *advertButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
     [advertButton addTarget:self action:@selector(button:) forControlEvents:UIControlEventTouchUpInside];
+    
+    //self.cl.latitude =
     
     myPin.rightCalloutAccessoryView = advertButton;
     myPin.draggable = NO;
