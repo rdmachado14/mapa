@@ -132,74 +132,123 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filmes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TK9-xR-fHO">
-                                <rect key="frame" x="164" y="41" width="50" height="21"/>
+                                <rect key="frame" x="164" y="20" width="50" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="164" y="25" width="50" height="21"/>
+                                </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qX-id-pFu">
-                                <rect key="frame" x="101" y="101" width="176" height="30"/>
-                                <state key="normal" title="Vingadores: Era de Ultron">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="filme1:" destination="Iqi-1U-vk5" eventType="touchUpInside" id="5Yr-Qx-dbC"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfX-Yc-Ngy">
-                                <rect key="frame" x="128" y="177" width="123" height="30"/>
+                                <rect key="frame" x="128" y="116" width="123" height="30"/>
                                 <state key="normal" title="O Franco Atirador">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="128" y="143" width="123" height="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="filme3:" destination="Iqi-1U-vk5" eventType="touchUpInside" id="77w-nw-4cH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEL-r0-u6Z">
-                                <rect key="frame" x="119" y="139" width="141" height="30"/>
+                                <rect key="frame" x="119" y="85" width="141" height="30"/>
                                 <state key="normal" title="Velozes e Furiosos 7">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="119" y="105" width="141" height="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="filme2:" destination="Iqi-1U-vk5" eventType="touchUpInside" id="9RW-Dx-iut"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ação, Marvel, Joss Whedon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNa-56-5fJ">
-                                <rect key="frame" x="82" y="282" width="215" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ação, Universal Pictures, James Wan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fS-ak-flD">
-                                <rect key="frame" x="51" y="340" width="286" height="21"/>
+                                <rect key="frame" x="51" y="212" width="286" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="51" y="234" width="286" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ação, Marvel, Joss Whedon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNa-56-5fJ">
+                                <rect key="frame" x="87" y="164" width="215" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Msl-hi-lm6"/>
+                                    <constraint firstAttribute="width" constant="215" id="ft8-8I-dKI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="87" y="189" width="215" height="21"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ação, Paris Filmes, Pierre Morel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y56-J2-qkq">
-                                <rect key="frame" x="66" y="396" width="349" height="21"/>
+                                <rect key="frame" x="68" y="261" width="349" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="68" y="278" width="349" height="21"/>
+                                </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qX-id-pFu">
+                                <rect key="frame" x="101" y="54" width="176" height="30"/>
+                                <state key="normal" title="Vingadores: Era de Ultron">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="101" y="67" width="176" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="filme1:" destination="Iqi-1U-vk5" eventType="touchUpInside" id="5Yr-Qx-dbC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6qX-id-pFu" firstAttribute="centerX" secondItem="nEL-r0-u6Z" secondAttribute="centerX" id="1tl-Zv-lhu"/>
-                            <constraint firstItem="TK9-xR-fHO" firstAttribute="centerX" secondItem="6qX-id-pFu" secondAttribute="centerX" id="4SX-ZR-Dd2"/>
-                            <constraint firstItem="tNa-56-5fJ" firstAttribute="centerX" secondItem="lfX-Yc-Ngy" secondAttribute="centerX" id="4gd-XV-XcH"/>
-                            <constraint firstItem="7fS-ak-flD" firstAttribute="top" secondItem="tNa-56-5fJ" secondAttribute="bottom" constant="37" id="HYp-MC-Xbr"/>
-                            <constraint firstItem="tNa-56-5fJ" firstAttribute="top" secondItem="lfX-Yc-Ngy" secondAttribute="bottom" constant="75" id="LXb-pm-0B0"/>
-                            <constraint firstItem="7fS-ak-flD" firstAttribute="centerX" secondItem="y56-J2-qkq" secondAttribute="centerX" constant="-46.5" id="SMX-oH-zEU"/>
-                            <constraint firstItem="nEL-r0-u6Z" firstAttribute="centerX" secondItem="lfX-Yc-Ngy" secondAttribute="centerX" id="X6x-GX-br4"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="y56-J2-qkq" secondAttribute="trailing" constant="-56" id="Z4Q-uQ-1sv"/>
-                            <constraint firstItem="TK9-xR-fHO" firstAttribute="top" secondItem="51L-tF-zfL" secondAttribute="bottom" constant="21" id="cZZ-M9-3CZ"/>
-                            <constraint firstItem="nEL-r0-u6Z" firstAttribute="top" secondItem="6qX-id-pFu" secondAttribute="bottom" constant="8" symbolic="YES" id="cfR-hQ-1XW"/>
-                            <constraint firstItem="y56-J2-qkq" firstAttribute="leading" secondItem="KQL-aD-WHV" secondAttribute="leadingMargin" constant="50" id="hqg-vm-W2a"/>
-                            <constraint firstItem="6qX-id-pFu" firstAttribute="top" secondItem="TK9-xR-fHO" secondAttribute="bottom" constant="39" id="lkl-Ta-SCv"/>
-                            <constraint firstItem="tNa-56-5fJ" firstAttribute="leading" secondItem="KQL-aD-WHV" secondAttribute="leadingMargin" constant="66" id="mkm-0W-B0q"/>
-                            <constraint firstItem="y56-J2-qkq" firstAttribute="top" secondItem="7fS-ak-flD" secondAttribute="bottom" constant="35" id="pAC-Js-8qb"/>
-                            <constraint firstItem="lfX-Yc-Ngy" firstAttribute="top" secondItem="nEL-r0-u6Z" secondAttribute="bottom" constant="8" symbolic="YES" id="qnh-H6-VcX"/>
+                            <constraint firstItem="lfX-Yc-Ngy" firstAttribute="centerX" secondItem="tNa-56-5fJ" secondAttribute="centerX" constant="-5" id="3sE-Xc-Z3z">
+                                <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="lfX-Yc-Ngy" firstAttribute="top" secondItem="nEL-r0-u6Z" secondAttribute="bottom" constant="1" id="6Ee-NB-35D">
+                                <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="y56-J2-qkq" firstAttribute="top" secondItem="7fS-ak-flD" secondAttribute="bottom" constant="28" id="Jsq-Aa-C80">
+                                <variation key="heightClass=regular-widthClass=regular" constant="19"/>
+                            </constraint>
+                            <constraint firstItem="TK9-xR-fHO" firstAttribute="centerX" secondItem="6qX-id-pFu" secondAttribute="centerX" id="KDS-sE-7s4"/>
+                            <constraint firstItem="TK9-xR-fHO" firstAttribute="top" secondItem="51L-tF-zfL" secondAttribute="bottom" id="KVL-JJ-sBg">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-6"/>
+                            </constraint>
+                            <constraint firstItem="6qX-id-pFu" firstAttribute="top" secondItem="TK9-xR-fHO" secondAttribute="bottom" constant="13" id="Kvq-Ft-rwT">
+                                <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="tNa-56-5fJ" firstAttribute="top" secondItem="lfX-Yc-Ngy" secondAttribute="bottom" constant="18" id="Mk5-7S-s5i">
+                                <variation key="heightClass=regular-widthClass=regular" constant="15"/>
+                            </constraint>
+                            <constraint firstItem="nEL-r0-u6Z" firstAttribute="top" secondItem="6qX-id-pFu" secondAttribute="bottom" constant="1" id="Q1I-Qx-7W0">
+                                <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="nEL-r0-u6Z" firstAttribute="centerX" secondItem="lfX-Yc-Ngy" secondAttribute="centerX" id="dYn-ET-S4k"/>
+                            <constraint firstItem="tNa-56-5fJ" firstAttribute="leading" secondItem="KQL-aD-WHV" secondAttribute="leadingMargin" constant="71" id="ebV-xn-Ch2">
+                                <variation key="heightClass=regular-widthClass=regular" constant="210"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="y56-J2-qkq" secondAttribute="trailing" constant="-58" id="gvw-O9-sZw">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-204"/>
+                            </constraint>
+                            <constraint firstItem="nEL-r0-u6Z" firstAttribute="centerX" secondItem="6qX-id-pFu" secondAttribute="centerX" id="jgw-j0-JAa"/>
+                            <constraint firstItem="7fS-ak-flD" firstAttribute="leading" secondItem="KQL-aD-WHV" secondAttribute="leadingMargin" constant="35" id="lx3-fc-YU4">
+                                <variation key="heightClass=regular-widthClass=regular" constant="174"/>
+                            </constraint>
+                            <constraint firstItem="y56-J2-qkq" firstAttribute="leading" secondItem="KQL-aD-WHV" secondAttribute="leadingMargin" constant="52" id="odh-IC-I5v">
+                                <variation key="heightClass=regular-widthClass=regular" constant="198"/>
+                            </constraint>
+                            <constraint firstItem="7fS-ak-flD" firstAttribute="top" secondItem="tNa-56-5fJ" secondAttribute="bottom" constant="27" id="q4o-hU-cgy">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="kSO-d0-hdh"/>
